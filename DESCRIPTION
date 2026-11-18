@@ -1,0 +1,72 @@
+Package: IsoRemodel
+Type: Package
+Title: Paired and Unpaired Long-Read RNA Isoform Analysis
+Version: 0.2.1
+Authors@R: person("Sherif", "Rashad", role = c("aut", "cre"),
+    email = "Sherif.mohamed.rashad.e3@tohoku.ac.jp")
+Description: Imports Pigeon classification and junction tables, harmonizes
+    splice-chain identities, performs RNA quality checks, depth-controlled
+    isoform gain and loss, paired isoform remodeling with resampling and
+    finite-count simulations, independent-group composition analysis with
+    sample bootstrap and permutation tests, and differential transcript usage.
+    Paired or unpaired designs and subject or sample exclusions use YAML
+    configuration and an explicit sample metadata table. ORF prediction and
+    protein-consequence analyses are outside the package scope.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.5.0)
+Imports:
+    data.table,
+    digest,
+    dplyr,
+    DRIMSeq,
+    BiocParallel,
+    forcats,
+    ggplot2,
+    grDevices,
+    grid,
+    jsonlite,
+    knitr,
+    MASS,
+    Matrix,
+    methods,
+    patchwork,
+    png,
+    purrr,
+    readr,
+    ragg,
+    rlang,
+    scales,
+    showtext,
+    stageR,
+    stats,
+    stringr,
+    svglite,
+    sysfonts,
+    systemfonts,
+    tibble,
+    tidyr,
+    tools,
+    utils,
+    vegan,
+    yaml,
+    zip
+Suggests:
+    AnnotationDbi,
+    clusterProfiler,
+    ComplexUpset,
+    ggalluvial,
+    ggrepel,
+    GO.db,
+    msigdbr,
+    openxlsx,
+    org.Hs.eg.db,
+    renv,
+    remotes,
+    rmarkdown,
+    rtracklayer
+SystemRequirements: The audited DTU adapter requires DRIMSeq 1.38.0.
+    Rtools matching R is needed on Windows when installing archived source
+    packages; equivalent R package compilation tools are needed on Linux/macOS.
+NeedsCompilation: no
+Config/renv/snapshot/type: explicit

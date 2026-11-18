@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: >-
+  Please cite IsoRemodel and the associated bioRxiv preprint when using this
+  workflow. The final article citation and archived software DOI can be added
+  when available.
+type: software
+title: "IsoRemodel: an R workflow for paired and unpaired long-read isoform analysis"
+version: 0.2.1
+date-released: 2026-11-02
+authors:
+  - family-names: Rashad
+    given-names: Sherif
+    email: Sherif.mohamed.rashad.e3@tohoku.ac.jp
+license: GPL-3.0-or-later
+keywords:
+  - long-read RNA sequencing
+  - isoform remodeling
+  - differential transcript usage
+  - paired analysis
+  - unpaired analysis
+  - leave-one-out sensitivity
+  - Pigeon
+  - DRIMSeq
+preferred-citation:
+  type: article
+  title: "Long read multi-omics sequencing reveals DNA-to-RNA evolutionary remodeling trajectories of recurrent astrocytoma"
+  authors:
+    - family-names: Rashad
+      given-names: Sherif
+    - family-names: Ando
+      given-names: Daisuke
+    - family-names: Yamashita
+      given-names: Shota
+    - family-names: Shimoda
+      given-names: Yoshiteru
+    - family-names: Kanamori
+      given-names: Masayuki
+    - family-names: Endo
+      given-names: Hidenori
+    - family-names: Niizuma
+      given-names: Kuniyasu
+  journal: bioRxiv
+  year: 2026
+  date-published: 2026-07-14
+  doi: 10.64898/2026.07.12.738108
+  url: https://www.biorxiv.org/content/10.64898/2026.07.12.738108v1
