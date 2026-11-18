@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-02",
+  "baseline": "v0.2.0 before the independent-sample extension",
+  "baseline_archive_sha256": "d76476061806c768461db03867561469ac7fd99ee119ba5fb43bc243237179bc",
+  "note": "The DTU core now includes independent-sample design support. Paired behavior is checked with the retained tests; file identity is not claimed for that extension.",
+  "engines": [
+    {
+      "engine": "inst/engines/dtu_core.R",
+      "sha256_baseline": "4ec96576057a0d50de91836ded9040f244bf3f4578d19c82a9bdbb81cdd6fdb4",
+      "sha256_current": "b4894fae59b662130a098dcdf13dff84da3aff831088b7e7a31a4292d9bf827d",
+      "identical": false
+    },
+    {
+      "engine": "inst/engines/dtu_enrichment_core.R",
+      "sha256_baseline": "d97d45c83f5bf85921168a1606957c56a389b24a148ca46585936f26b8d84bdd",
+      "sha256_current": "d97d45c83f5bf85921168a1606957c56a389b24a148ca46585936f26b8d84bdd",
+      "identical": true
+    },
+    {
+      "engine": "inst/engines/remodeling_config.R",
+      "sha256_baseline": "c54a052293af6e24d67e511ce3a5a6580a365305ac2f9bea159ca47c13a5f390",
+      "sha256_current": "c54a052293af6e24d67e511ce3a5a6580a365305ac2f9bea159ca47c13a5f390",
+      "identical": true
+    },
+    {
+      "engine": "inst/engines/remodeling_engine.R",
+      "sha256_baseline": "52f545d6a80aefd49f18ed0d0ec5c5d76fbc7dbc9c4269c98832d37342570ab8",
+      "sha256_current": "52f545d6a80aefd49f18ed0d0ec5c5d76fbc7dbc9c4269c98832d37342570ab8",
+      "identical": true
+    },
+    {
+      "engine": "inst/engines/remodeling_functions.R",
+      "sha256_baseline": "5c8d7263f8d1ff06493f6364f4765651c5d2a6a266284cfd1f19ea5e867215ac",
+      "sha256_current": "5c8d7263f8d1ff06493f6364f4765651c5d2a6a266284cfd1f19ea5e867215ac",
+      "identical": true
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+Testing test_config.R
+Configuration and metadata tests passed.
+Testing test_dtu_refit.R
+DTU targeted-refit comparison and input tests passed.
+Testing test_dtu_rng.R
+DTU RNG contract and caller-state regression tests passed.
+Testing test_dtu.R
+SKIP DTU stageR execution test: stageR unavailable
+SKIP DTU adapter numerical tests: exact DRIMSeq 1.38.0 unavailable
+DTU tests passed (available dependencies).
+Testing test_logging.R
+[IsoRemodel] [2026-10-26 00:59:57 -0700] [INFO] IsoRemodel v0.2.0
+[IsoRemodel] [2026-10-26 00:59:57 -0700] [INFO] An R workflow for paired long-read isoform analysis
+[IsoRemodel] [2026-10-26 00:59:57 -0700] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-10-26 00:59:57 -0700] [WARNING] message with | line
+[IsoRemodel] [2026-10-26 00:59:57 -0700] [INFO] Progress: 2/5 stages passed (40%) | remodeling | starting | elapsed 0s | row 1 | row 2
+[IsoRemodel] [2026-10-26 00:59:57 -0700] [ERROR] Progress: 2/5 stages passed (40%) | remodeling | failed | elapsed 0s
+IsoRemodel banner, logging and progress tests passed.
+Testing test_plot_layouts.R
+Plot layout data-preservation and geometry checks passed.
+Testing test_release_replot.R
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] IsoRemodel v0.2.0
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] An R workflow for paired long-read isoform analysis
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] Replot only; source: /tmp/Rtmp4vjnIi/isoremodel_release_replot_5505d567d/previous; corrected DTU: /tmp/Rtmp4vjnIi/isoremodel_release_replot_5505d567d/confirmed/M06_dtu
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] No model fitting, stageR adjustment, enrichment testing or other analytical stage will run.
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] Progress: 0/4 stages passed (0%) | saved_figures | starting | elapsed 0s | 1 saved non-DTU parent figures
+[IsoRemodel] [2026-10-26 00:59:59 -0700] [INFO] Saved plot 1/1: M03_qc/figures/full_length_reads_by_sample.plot.rds
+[IsoRemodel] [2026-10-26 01:00:01 -0700] [INFO] Progress: 1/4 stages passed (25%) | DTU_views | starting | elapsed 2s | Rendering corrected saved DTU measurements and tests
+[IsoRemodel] [2026-10-26 01:00:41 -0700] [INFO] Progress: 2/4 stages passed (50%) | saved_pathways | starting | elapsed 42s | Reading already-computed ORA tables; no enrichment tests
+[IsoRemodel] [2026-10-26 01:00:44 -0700] [INFO] Progress: 3/4 stages passed (75%) | review | starting | elapsed 45s | Building the complete figure index and review PDFs
+[IsoRemodel] [2026-10-26 01:00:48 -0700] [INFO] Progress: 4/4 stages passed (100%) | replot | complete | elapsed 49s | 74 figures; source files unchanged: TRUE
+[IsoRemodel] [2026-10-26 01:00:48 -0700] [INFO] Replot finished. Output: /tmp/Rtmp4vjnIi/isoremodel_release_replot_5505d567d/replot; review: /tmp/Rtmp4vjnIi/isoremodel_release_replot_5505d567d/replot/IsoRemodel_v0.2.0_replot_review.zip
+Release replot fixture, corrected RNG gates and unchanged sources passed.
+Testing test_remodeling_enrichment.R
+Remodeling enrichment set/background tests passed.
+Testing test_remodeling.R
+Remodeling mathematical and classification tests passed.
+                         test passed seconds error
+                test_config.R   TRUE   0.272      
+             test_dtu_refit.R   TRUE   0.258      
+               test_dtu_rng.R   TRUE   0.016      
+                   test_dtu.R   TRUE   2.390      
+               test_logging.R   TRUE   0.028      
+          test_plot_layouts.R   TRUE   1.744      
+        test_release_replot.R   TRUE  49.480      
+ test_remodeling_enrichment.R   TRUE   0.020      
+            test_remodeling.R   TRUE   0.767      
+All 9 bounded test files passed.

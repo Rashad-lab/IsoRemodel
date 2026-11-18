@@ -1,0 +1,14 @@
+cohort	seed	kind	normal_kind	sample_kind	contract_version	R_version	DRIMSeq_version	model_contract_version	input_fingerprint
+all_samples	234227138	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn1_primary_11_samples	187987110	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn1_recurrent_11_samples	21405933	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn2_primary_11_samples	175604671	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn2_recurrent_11_samples	63759755	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn3_primary_11_samples	4089585	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn3_recurrent_11_samples	183510784	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn4_primary_11_samples	166441258	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn4_recurrent_11_samples	41436977	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn5_primary_11_samples	201283809	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn5_recurrent_11_samples	192132435	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn6_primary_11_samples	4128126	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062
+excluding_ptn6_recurrent_11_samples	149008305	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	independent-DTU-v1	5ccb5ac7838fbe43dd497e9ae3eb12e0deffda27635cc81d024310feba23f062

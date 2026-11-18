@@ -1,0 +1,3 @@
+sample_id,subject_id,condition,classification_file,junctions_file,fl_count_column,pigeon_summary_file,filter_reasons_file,barcode,include
+subject01_primary,subject01,primary,subject01_primary_classification.txt,subject01_primary_junctions.txt,FL.sample,,,,TRUE
+subject01_recurrent,subject01,recurrent,subject01_recurrent_classification.txt,subject01_recurrent_junctions.txt,FL.sample,,,,TRUE

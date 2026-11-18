@@ -1,0 +1,6 @@
+gate	pass
+Frozen gene families retained	TRUE
+No unexplained numerical fits	TRUE
+stageR complete gene families	TRUE
+stageR screening agrees with full-family FDR	TRUE
+Broad structural fractions conserve mass	TRUE

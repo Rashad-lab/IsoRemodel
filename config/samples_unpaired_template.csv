@@ -1,0 +1,9 @@
+sample_id,subject_id,condition,classification_file,junctions_file,fl_count_column,include
+control_1,control_1,control,control_1.filtered_lite_classification.txt,control_1.filtered_lite_junctions.txt,FL.sample,TRUE
+control_2,control_2,control,control_2.filtered_lite_classification.txt,control_2.filtered_lite_junctions.txt,FL.sample,TRUE
+control_3,control_3,control,control_3.filtered_lite_classification.txt,control_3.filtered_lite_junctions.txt,FL.sample,TRUE
+control_4,control_4,control,control_4.filtered_lite_classification.txt,control_4.filtered_lite_junctions.txt,FL.sample,TRUE
+treated_1,treated_1,treated,treated_1.filtered_lite_classification.txt,treated_1.filtered_lite_junctions.txt,FL.sample,TRUE
+treated_2,treated_2,treated,treated_2.filtered_lite_classification.txt,treated_2.filtered_lite_junctions.txt,FL.sample,TRUE
+treated_3,treated_3,treated,treated_3.filtered_lite_classification.txt,treated_3.filtered_lite_junctions.txt,FL.sample,TRUE
+treated_4,treated_4,treated,treated_4.filtered_lite_classification.txt,treated_4.filtered_lite_junctions.txt,FL.sample,TRUE

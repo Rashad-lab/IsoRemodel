@@ -1,0 +1,15 @@
+cohort	alpha	available	reason	scheduled_genes	screening_genes	confirmation_family_genes	gene_screen_FDR_max_difference	family_conserved
+all_6_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+all_6_pairs	0.1	TRUE	success	4	4	4	0	TRUE
+excluding_ptn1_5_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+excluding_ptn1_5_pairs	0.1	TRUE	success	4	4	4	0	TRUE
+excluding_ptn2_5_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+excluding_ptn2_5_pairs	0.1	TRUE	success	4	4	4	0	TRUE
+excluding_ptn3_5_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+excluding_ptn3_5_pairs	0.1	TRUE	success	4	4	4	0	TRUE
+excluding_ptn4_5_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+excluding_ptn4_5_pairs	0.1	TRUE	success	4	4	4	0	TRUE
+excluding_ptn5_5_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+excluding_ptn5_5_pairs	0.1	TRUE	success	4	4	4	0	TRUE
+excluding_ptn6_5_pairs	0.05	TRUE	success	4	4	4	0	TRUE
+excluding_ptn6_5_pairs	0.1	TRUE	success	4	4	4	0	TRUE

@@ -1,0 +1,16 @@
+R R version 4.6.0 (2026-04-24)
+[IsoRemodel] [2026-10-21 02:25:54 +0200] [INFO] IsoRemodel v0.1.1
+
+[IsoRemodel] [2026-10-21 02:25:54 +0200] [INFO] An R workflow for paired long-read isoform analysis
+
+[IsoRemodel] [2026-10-21 02:25:54 +0200] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+
+[IsoRemodel] [2026-10-21 02:25:54 +0200] [WARNING] message with | line
+
+[IsoRemodel] [2026-10-21 02:25:54 +0200] [INFO] Progress: 2/5 stages passed (40%) | remodeling | starting | elapsed 0s | row 1 | row 2
+
+[IsoRemodel] [2026-10-21 02:25:54 +0200] [ERROR] Progress: 2/5 stages passed (40%) | remodeling | failed | elapsed 0s
+
+IsoRemodel banner, logging and progress tests passed.
+
+{"type":"character","names":null,"values":["LOGGING PASSED"]}

@@ -1,0 +1,382 @@
+# Study settings from the revised Cancer Communications RNA analyses.
+# Edit inputs.root_directory once to point to the Pigeon input directory.
+# The metadata contains the exact original input filenames, without a disk prefix.
+# Paths in this file resolve relative to this YAML; metadata filenames resolve
+# relative to inputs.root_directory. Optional blank metadata paths stay unavailable.
+# Sensitivity selected = one run per named patient; all = separate leave-one-out
+# cohorts for every patient; none = primary cohort only. Absolute support settings
+# are never silently reduced for a smaller cohort. Review errors before running.
+# Production scientific thresholds and replicate counts below match the paper.
+schema_version: 0.1.0
+inputs:
+  sample_metadata: samples.csv
+  root_directory: D:/Glioma PacBio project/isoseq/mapped/collapse/classify
+output:
+  # New analyses are isolated from the completed v0.1.x study outputs.
+  # The v0.2.1 replot command separately reads F:/IsoRemodel/outputs.
+  directory: F:/IsoRemodel/outputs_v0.2.1
+comparison:
+  reference: primary
+  comparison: recurrent
+  paired: true
+  incomplete_pairs: error
+  technical_replicates: error
+cohorts:
+- id: all_6_pairs
+  exclude_subjects: []
+sensitivity:
+  mode: selected
+  patients:
+  - ptn2
+  analysis: full
+  cohort_id_pattern: excluding_{patient}_{remaining_pairs}_pairs
+  common_depth_reference: primary_cohort
+  remodeling_isoform_retention_reference: primary_cohort
+  dtu_filter_and_refit_each_cohort: true
+  retain_paper_support_thresholds: true
+  insufficient_remaining_pairs: error
+  observed_leave_one_patient_out:
+    enabled: true
+    patients: all
+references:
+  species: Homo sapiens
+  genome_build: GRCh38
+  annotation_gtf: E:/Genome-assemblies/Human/Gencode-downloads/v49/gencode.v49.annotation.gtf
+  gene_id_map: null
+  pathway_term2gene: null
+  pathway_term_names: null
+import:
+  classification_schema: pigeon_sqanti
+  count_column_default: FL.sample
+  counts_unit: integer_full_length_counts
+  optional_annotation_missingness: report_unavailable
+  duplicate_local_keys: error
+harmonization:
+  identity_version: junction_chain_paper_v1
+  no_junction_policy: sample_specific_not_cross_sample_comparable
+  canonical_gene_policy: paper_support_rank_preserve_all_counts
+  gene_namespace_policy: retain_original_and_audit_mapping
+  optional_end_bin_width_nt: 50
+global_qc:
+  detected_min_fl:
+  - 1
+  - 2
+  - 3
+  - 5
+  complexity_support_min_fl: 3
+  complexity_support_min_subjects_in_either_condition: 4
+  structural_categories: all_observed
+  retain_local_and_harmonized_denominators: true
+gain_loss:
+  n_downsample_replicates: 100
+  n_depth_curve_replicates: 20
+  checkpoint_every: 5
+  isoform_presence_min_fl: 5
+  isoform_presence_min_fraction: 0.1
+  gene_evaluable_min_fl: 20
+  primary_patient_support: 4
+  depth_robust_probability: 0.8
+  require_cross_sample_comparable_id: true
+  gene_floor_sensitivity:
+  - 10
+  - 20
+  - 30
+  - 50
+  patient_support_thresholds:
+  - 2
+  - 3
+  - 4
+  depth_robust_probability_sensitivity:
+  - 0.7
+  - 0.8
+  - 0.9
+  depth_curve_fractions:
+  - 0.25
+  - 0.5
+  - 0.75
+  - 1.0
+  keep_structural_categories:
+  - full-splice_match
+  - incomplete-splice_match
+  - novel_in_catalog
+  - novel_not_in_catalog
+  opposite_direction_maximum: 0
+  rarefaction_target_policy: minimum_primary_cohort_library
+  sensitivity_reuses_primary_depth: true
+technical_qc:
+  long_transcript_threshold_nt: 4000
+  terminal_proximity_nt: 50
+  terminus_bin_width_nt: 50
+  minimum_correlation_n: 4
+  mitochondrial_contigs:
+  - M
+  - MT
+  - chrM
+  - chrMT
+  minimum_chromosome_annotation_fl_coverage: 0.95
+  paired_comparison: wilcoxon_signed_rank_asymptotic
+  paired_associations: spearman
+  association_reporting_fdr: 0.05
+remodeling:
+  definition:
+    jsd_threshold: 0.2
+    max_delta_if_threshold: 0.25
+    entropy_direction_threshold: 0.2
+    direction_delta_if: 0.1
+    min_gene_sample_count: 5
+    min_isoform_total_fl: 5
+    min_retained_mass: 0.8
+    min_evaluable_pairs: 4
+    dominance_mean_if: 0.35
+    dominance_margin: 0.1
+    dominance_support_n: 4
+    dominance_sample_min_if: 0.25
+    secondary_min_mass: 0.15
+    patient_support_thresholds:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    primary_patient_support: 4
+  bootstrap:
+    stability_probability: 0.8
+    bootstrap_confidence: 0.95
+    bootstrap_mcse_target: 0.01
+    n_bootstrap_replicates: 5000
+    minimum_valid_fraction: 0.8
+    quantile_type: 8
+  split_null:
+    n_split_null_replicates: 1000
+    checkpoint_every_null_replicates: 25
+    empirical_null_overall_target: 0.05
+    empirical_null_stratum_target: 0.1
+    empirical_null_min_stratum_n: 200
+    empirical_null_convergence_tolerance: 0.005
+    stop_on_threshold_failure: false
+    pooled_gene_depth_bin_lower_bounds:
+    - 100
+    - 500
+    - 2000
+    - 10000
+    isoform_complexity_breaks:
+    - 2
+    - 4
+    - 8
+    - 20
+    jsd_threshold_grid:
+    - 0.1
+    - 0.15
+    - 0.2
+    - 0.25
+    - 0.3
+    max_delta_if_threshold_grid:
+    - 0.15
+    - 0.2
+    - 0.25
+    - 0.3
+    - 0.35
+  geometry:
+    n_geometry_per_stratum: 2500
+    geometry_isoform_numbers:
+    - 2
+    - 3
+    - 4
+    - 6
+    - 10
+    - 20
+    geometry_depths:
+    - 20
+    - 50
+    - 100
+    - 500
+    - 2000
+  cohort_test:
+    run_gene_null: true
+    gene_null_replicates: 20000
+    gene_null_max_isoforms: 20
+    gene_null_max_genes: 0
+    finite_count_pseudocount: 0.5
+    covariance_initial_replicates: 4096
+    covariance_maximum_replicates: 16384
+    covariance_trace_tolerance: 0.1
+    covariance_frobenius_tolerance: 0.25
+    profile_grid_points: 257
+    profile_tail_log_drop: 30
+    gene_model_minimum_success_fraction: 0.95
+    gene_model_minimum_stratum_success_fraction: 0.9
+    gene_model_minimum_stratum_n: 20
+  refinement:
+    run_resolution_refinement: true
+    refinement_trigger_p: 0.05
+    refinement_replicates: 120000
+    refinement_max_genes: 0
+  tail_diagnostic:
+    run_gpd_tail: true
+    gpd_empirical_exceedance_trigger: 10
+    gpd_tail_fractions:
+    - 0.025
+    - 0.05
+    - 0.1
+    gpd_min_tail_size: 80
+    gpd_log10_stability_tolerance: 0.75
+    gpd_ks_multiplier: 1.63
+  patient_test:
+    run_patient_level_test: true
+    patient_test_min_condition_fl: 30
+    patient_test_min_pooled_component_fl: 5
+    patient_test_max_isoforms: 20
+    patient_test_min_expected_count: 1
+    patient_test_max_fraction_expected_below_5: 0.2
+  validation:
+    run_truth_known_validation: true
+    validation_replicates_per_scenario: 12
+    validation_null_replicates: 2000
+    validation_minimum_production_availability: 0.95
+    validation_minimum_stratum_availability: 0.75
+    validation_maximum_null_call_rate: 0.1
+    isoform_counts:
+    - 2
+    - 4
+    sample_depths:
+    - 50
+    - 500
+    biological_ilr_sd:
+    - 0.05
+    - 0.25
+    null_mean_shift: 0
+    alternative_mean_shift: 0.6
+    midpoint_ilr_sd: 0.2
+    dirichlet_concentration: 1.5
+dtu:
+  # The paper used this algorithm plus the cohort seeds derived below. An
+  # explicit RNG contract prevents earlier stages or a fresh R session from
+  # changing DRIMSeq's randomly selected precision-estimation genes.
+  rng:
+    kind: L'Ecuyer-CMRG
+    normal_kind: Inversion
+    sample_kind: Rejection
+  force_refit: false
+  run_stageR: true
+  run_upset: true
+  write_supplement_workbook: true
+  pilot_max_genes: 100
+  minimum_isoform_fraction: 0.01
+  minimum_samples_isoform_fraction: 4
+  minimum_gene_count: 20
+  minimum_samples_gene_count: 4
+  minimum_isoform_count: 10
+  minimum_samples_isoform_count: 4
+  patient_support_min_abs_delta_if: 0.05
+  plot_all_dtu_genes: false
+  maximum_gene_plots: 0
+  examples_per_class: 3
+  isoforms_per_gene_example: 2
+  priority_example_genes:
+  - DELE1
+  - SLC25A6
+  maximum_heatmap_genes: 60
+  minimum_isoforms_per_gene: 2
+  count_source: full_depth_integer_counts
+  engine: drimseq_1_38_0_adapter_1_3_0
+enrichment:
+  enabled: true
+  matched_background: true
+  collections:
+  - GO_BP
+  - HALLMARK
+  - KEGG
+  reference_source: capture_study_resources_then_freeze
+  minimum_term_genes: 5
+  maximum_term_genes: 1000
+  minimum_foreground_genes: 8
+  matched_controls_per_target: 5
+  reporting_fdr: 0.1
+  nominal_display_fallback_p: 0.05
+  maximum_display_terms: 10
+  # Original M05 used GO BP and Hallmark. Add KEGG here if desired.
+  remodeling_collections: [GO_BP, HALLMARK]
+  remodeling_nominal_p_cutoff: 0.05
+  remodeling_go_backend: publication_AnnotationDbi_GO
+  remodeling_go_minimum_term_genes: 10
+  remodeling_go_maximum_term_genes: 500
+  dtu_go_backend: publication_MSIGDB_GO_BP
+  reference_cache_directory: F:/PacBio revision analysis/outputs/RNA_public_workflow/references/pathways
+multiplicity:
+  method: BH
+  fdr_thresholds:
+  - 0.05
+  - 0.1
+  reader_facing_label: FDR
+execution:
+  profile: production
+  strict_completion: true
+  resume: true
+  workers: 1
+  dtu_backend: serial_until_parallel_audit_validated
+  seeds:
+    import: 20260902
+    gain_loss: 20260903
+    remodeling: 20260903
+    dtu: 260605
+  checkpoint_every_genes: 100
+  cache_hash_includes_seed_rng_code_and_input_contents: true
+  keep_failed_run_audits: true
+  force_refit: false
+reporting:
+  layout_version: 0.2.0
+  maximum_upset_intersections: 40
+  enrichment_label_width: 40
+  minimum_enrichment_point_size: 3
+  formats:
+  - pdf
+  - svg
+  - png
+  - jpeg
+  dpi: 600
+  font_family: DejaVu Sans
+  font_size_pt: 14
+  scientific_labels_only: true
+  separate_panels_for_composites: true
+  replot_from_saved_results: true
+  enabled: true
+  outline_vector_fonts: true
+  editable_svg: true
+  title_size_pt: 16
+  axis_title_size_pt: 16
+  axis_text_size_pt: 14
+  legend_text_size_pt: 14
+  subtitle_size_pt: 14
+  caption_size_pt: 14
+  palettes:
+    remodeling_classes:
+      A: '#B2182B'
+      B: '#EF8A62'
+      C: '#7B3294'
+      D: '#2166AC'
+      E: '#1B7837'
+      F: '#636363'
+      U: '#BDBDBD'
+      NQ: '#F0F0F0'
+    events:
+      recurrent_gained: '#D55E00'
+      primary_lost: '#0072B2'
+    timepoints:
+      primary: '#4C78A8'
+      recurrent: '#E45756'
+    structural_categories:
+      full-splice_match: '#66C2A5'
+      incomplete-splice_match: '#FC8D62'
+      novel_in_catalog: '#8DA0CB'
+      novel_not_in_catalog: '#E78AC3'
+      genic: '#A6D854'
+      antisense: '#FFD92F'
+      fusion: '#E5C494'
+      intergenic: '#B3B3B3'
+stages:
+  import: true
+  gain_loss: true
+  qc: true
+  remodeling: true
+  dtu: true

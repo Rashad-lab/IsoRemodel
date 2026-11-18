@@ -1,0 +1,8 @@
+cohort	seed	kind	normal_kind	sample_kind	contract_version	R_version	DRIMSeq_version	model_contract_version	input_fingerprint
+all_6_pairs	261605	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453
+excluding_ptn1_5_pairs	147614105	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453
+excluding_ptn2_5_pairs	262605	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453
+excluding_ptn3_5_pairs	196047646	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453
+excluding_ptn4_5_pairs	217296385	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453
+excluding_ptn5_5_pairs	206705360	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453
+excluding_ptn6_5_pairs	214824022	L'Ecuyer-CMRG	Inversion	Rejection	dtu-rng-v1	R version 4.3.3 (2024-02-29)	1.38.0	1.3.0-public-0.1.2-rng-v1	19bd6421e23bbcaa25dd322aac9dca7fd0e69e6331183cc78c523ad6edba3453

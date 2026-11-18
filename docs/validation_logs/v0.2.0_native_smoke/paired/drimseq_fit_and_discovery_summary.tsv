@@ -1,0 +1,8 @@
+cohort	scheduled_genes	result_genes	finite_test_genes	unavailable_P1_genes	unexplained_numerical_genes	family_conserved	status
+all_6_pairs	4	4	4	0	0	TRUE	completed
+excluding_ptn1_5_pairs	4	4	4	0	0	TRUE	completed
+excluding_ptn2_5_pairs	4	4	4	0	0	TRUE	completed
+excluding_ptn3_5_pairs	4	4	4	0	0	TRUE	completed
+excluding_ptn4_5_pairs	4	4	4	0	0	TRUE	completed
+excluding_ptn5_5_pairs	4	4	4	0	0	TRUE	completed
+excluding_ptn6_5_pairs	4	4	4	0	0	TRUE	completed

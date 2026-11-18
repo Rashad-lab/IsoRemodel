@@ -1,0 +1,121 @@
+Testing test_config.R
+Configuration and metadata tests passed.
+Testing test_logging.R
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [WARNING] message with | line
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Progress: 2/5 stages passed (40%) | remodeling | starting | elapsed 0s | row 1 | row 2
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [ERROR] Progress: 2/5 stages passed (40%) | remodeling | failed | elapsed 0s
+IsoRemodel banner, logging and progress tests passed.
+Testing test_runner.R
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Validation passed: 12 samples, 6 paired subjects, 2 cohort(s); profile production.
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Output directory: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Importing Pigeon: ptn1_primary
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Importing Pigeon: ptn1_recurrent
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Importing Pigeon: ptn2_primary
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Importing Pigeon: ptn2_recurrent
+[IsoRemodel] [2026-11-02 08:01:17 +0400] [INFO] Importing Pigeon: ptn3_primary
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn3_recurrent
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn4_primary
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn4_recurrent
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn5_primary
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn5_recurrent
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn6_primary
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Importing Pigeon: ptn6_recurrent
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Imported 120 local transcript rows; 20 harmonized IDs; FL count conservation verified.
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Progress: 0/1 stages passed (0%) | workflow | starting | elapsed 0s | Preparing input fingerprints and run records; profile production.
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Starting RNA analysis 20261102T040118703763_5; profile production; stages import.
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | starting | elapsed 0s | Starting stage 1 of 1.
+[IsoRemodel] [2026-11-02 08:01:18 +0400] [INFO] Running import from saved inputs/raw files.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn1_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn1_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn2_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn2_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn3_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn3_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn4_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn4_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn5_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn5_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn6_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn6_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Imported 120 local transcript rows; 20 harmonized IDs; FL count conservation verified.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 1/1 stages passed (100%) | import | complete | elapsed 1s | Stage completion checks passed.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 1/1 stages passed (100%) | workflow | partial_complete | elapsed 1s | Requested stages finished; overall run status: partial_complete.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] IsoRemodel analysis finished: partial_complete. Run record: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow/runs/20261102T040118703763_5
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | workflow | starting | elapsed 0s | Preparing input fingerprints and run records; profile production.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Starting RNA analysis 20261102T040119542747_5; profile production; stages import.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | starting | elapsed 0s | Starting stage 1 of 1.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Reusing completed import statistics. To change figure styling, use scripts/replot.R.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | reused | elapsed 0s | Loaded matching completed statistics from the stage cache.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 1/1 stages passed (100%) | import | complete | elapsed 0s | Stage completion checks passed.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 1/1 stages passed (100%) | workflow | partial_complete | elapsed 0s | Requested stages finished; overall run status: partial_complete.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] IsoRemodel analysis finished: partial_complete. Run record: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow/runs/20261102T040119542747_5
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | workflow | starting | elapsed 0s | Preparing input fingerprints and run records; profile production.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Starting RNA analysis 20261102T040119619776_5; profile production; stages import.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | starting | elapsed 0s | Starting stage 1 of 1.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Reusing completed import statistics. To change figure styling, use scripts/replot.R.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | reused | elapsed 0s | Loaded matching completed statistics from the stage cache.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 1/1 stages passed (100%) | import | complete | elapsed 0s | Stage completion checks passed.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 1/1 stages passed (100%) | workflow | partial_complete | elapsed 0s | Requested stages finished; overall run status: partial_complete.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] IsoRemodel analysis finished: partial_complete. Run record: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow/runs/20261102T040119619776_5
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | workflow | starting | elapsed 0s | Preparing input fingerprints and run records; profile production.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Starting RNA analysis 20261102T040119681425_5; profile production; stages import.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | starting | elapsed 0s | Starting stage 1 of 1.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Running import from saved inputs/raw files.
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [WARNING] Stage import: runner warning audit fixture
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn1_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn1_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn2_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn2_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn3_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn3_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn4_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn4_recurrent
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn5_primary
+[IsoRemodel] [2026-11-02 08:01:19 +0400] [INFO] Importing Pigeon: ptn5_recurrent
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Importing Pigeon: ptn6_primary
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Importing Pigeon: ptn6_recurrent
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Imported 120 local transcript rows; 20 harmonized IDs; FL count conservation verified.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 1/1 stages passed (100%) | import | complete | elapsed 0s | Stage completion checks passed.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 1/1 stages passed (100%) | workflow | partial_complete | elapsed 0s | Requested stages finished; overall run status: partial_complete.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] IsoRemodel analysis finished: partial_complete. Run record: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow/runs/20261102T040119681425_5
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 0/1 stages passed (0%) | workflow | starting | elapsed 0s | Preparing input fingerprints and run records; profile production.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Starting RNA analysis 20261102T040120150564_5; profile production; stages import.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | starting | elapsed 0s | Starting stage 1 of 1.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Running import from saved inputs/raw files.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Importing Pigeon: ptn1_primary
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [ERROR] Progress: 0/1 stages passed (0%) | import | failed | elapsed 0s | ptn1_primary FL.sample must contain finite nonnegative integer values; invalid rows: 1
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [ERROR] FAILED at import: ptn1_primary FL.sample must contain finite nonnegative integer values; invalid rows: 1; audits: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow/runs/20261102T040120150564_5
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] IsoRemodel v0.2.1
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] An R workflow for paired and unpaired long-read isoform analysis
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Pigeon import | QC | Depth-controlled gain/loss | Remodeling | DTU
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 0/1 stages passed (0%) | workflow | starting | elapsed 0s | Preparing input fingerprints and run records; profile production.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Starting RNA analysis 20261102T040120228899_5; profile production; stages import.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | starting | elapsed 0s | Starting stage 1 of 1.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Reusing completed import statistics. To change figure styling, use scripts/replot.R.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 0/1 stages passed (0%) | import | reused | elapsed 0s | Loaded matching completed statistics from the stage cache.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 1/1 stages passed (100%) | import | complete | elapsed 0s | Stage completion checks passed.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] Progress: 1/1 stages passed (100%) | workflow | partial_complete | elapsed 0s | Requested stages finished; overall run status: partial_complete.
+[IsoRemodel] [2026-11-02 08:01:20 +0400] [INFO] IsoRemodel analysis finished: partial_complete. Run record: /tmp/RtmprAoPwD/rna_runner_test_51b76f709/workflow/runs/20261102T040120228899_5
+           test passed seconds error
+  test_config.R   TRUE   0.314      
+ test_logging.R   TRUE   0.041      
+  test_runner.R   TRUE   2.965      
+All 3 bounded test files passed.

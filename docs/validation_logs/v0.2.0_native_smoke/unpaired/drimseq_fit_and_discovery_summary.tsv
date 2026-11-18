@@ -1,0 +1,14 @@
+cohort	scheduled_genes	result_genes	finite_test_genes	unavailable_P1_genes	unexplained_numerical_genes	family_conserved	status
+all_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn1_primary_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn1_recurrent_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn2_primary_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn2_recurrent_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn3_primary_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn3_recurrent_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn4_primary_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn4_recurrent_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn5_primary_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn5_recurrent_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn6_primary_11_samples	4	4	3	1	0	TRUE	completed
+excluding_ptn6_recurrent_11_samples	4	4	3	1	0	TRUE	completed

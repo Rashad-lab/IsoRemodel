@@ -1,0 +1,127 @@
+R R version 4.6.0 (2026-04-24)
+[2026-10-21 02:02:08] Starting RNA analysis 20261021T000208280999_42; profile smoke; stages import, gain_loss, qc, remodeling.
+
+[2026-10-21 02:02:08] Running import from saved inputs/raw files.
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn1_primary
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn1_recurrent
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn2_primary
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn2_recurrent
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn3_primary
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn3_recurrent
+
+[2026-10-21 02:02:09] Importing Pigeon: ptn4_primary
+
+[2026-10-21 02:02:10] Importing Pigeon: ptn4_recurrent
+
+[2026-10-21 02:02:10] Importing Pigeon: ptn5_primary
+
+[2026-10-21 02:02:10] Importing Pigeon: ptn5_recurrent
+
+[2026-10-21 02:02:10] Importing Pigeon: ptn6_primary
+
+[2026-10-21 02:02:10] Importing Pigeon: ptn6_recurrent
+
+[2026-10-21 02:02:10] Imported 120 local transcript rows; 20 harmonized IDs; FL count conservation verified.
+
+[2026-10-21 02:02:10] Running gain_loss from saved inputs/raw files.
+
+[2026-10-21 02:02:15] Gain/loss rarefaction 2/4
+
+[2026-10-21 02:02:15] Gain/loss rarefaction 4/4
+
+[2026-10-21 02:02:15] Running qc from saved inputs/raw files.
+
+[2026-10-21 02:02:16] RNA QC: all_6_pairs
+
+[2026-10-21 02:02:17] RNA QC: excluding_ptn2_5_pairs
+
+[2026-10-21 02:02:17] Running remodeling from saved inputs/raw files.
+
+[2026-10-21 02:02:18] [INFO] Remodeling step: universe.
+
+[2026-10-21 02:02:18] [INFO] Remodeling universe prepared:  4  quantifiable genes and  8  retained isoforms.
+
+[2026-10-21 02:02:18] [INFO] Remodeling step: observed-metrics.
+
+[2026-10-21 02:02:18] [INFO] Calculating observed remodeling metrics for  all_6_pairs .
+
+[2026-10-21 02:02:18] [INFO] Calculating observed remodeling metrics for  excluding_ptn2_5_pairs .
+
+[2026-10-21 02:02:18] [INFO] Remodeling step: patient-level-inference.
+
+[2026-10-21 02:02:19] [INFO] Remodeling step: geometry-simulation.
+
+[2026-10-21 02:02:21] [INFO] Remodeling step: empirical-null.
+
+[2026-10-21 02:02:21] [INFO] Empirical null: completed  2  /  8  source-replicates.
+
+[2026-10-21 02:02:21] [INFO] Empirical null: completed  4  /  8  source-replicates.
+
+[2026-10-21 02:02:21] [INFO] Empirical null: completed  6  /  8  source-replicates.
+
+[2026-10-21 02:02:21] [INFO] Empirical null: completed  8  /  8  source-replicates.
+
+[2026-10-21 02:02:21] [INFO] Split-null simulations complete; summarizing calibration and strata.
+
+[2026-10-21 02:02:22] [INFO] Split-null calibration summaries complete.
+
+[2026-10-21 02:02:22] [WARN] At least one adequately populated half-depth split-null stratum exceeded the  registered stress-screen target. Observed genes in that stratum will be  cross-audited against effect stability, patient support, and cohort P values.
+
+[2026-10-21 02:02:22] [INFO] Remodeling step: bootstrap-run.
+
+[2026-10-21 02:02:22] [INFO] Bootstrap  all_6_pairs :  4  genes pending.
+
+[2026-10-21 02:02:22] [INFO] Bootstrap  all_6_pairs :  2  /  4  genes cached.
+
+[2026-10-21 02:02:22] [INFO] Bootstrap  all_6_pairs :  4  /  4  genes cached.
+
+[2026-10-21 02:02:22] [INFO] Bootstrap  excluding_ptn2_5_pairs :  4  genes pending.
+
+[2026-10-21 02:02:22] [INFO] Bootstrap  excluding_ptn2_5_pairs :  2  /  4  genes cached.
+
+[2026-10-21 02:02:22] [INFO] Bootstrap  excluding_ptn2_5_pairs :  4  /  4  genes cached.
+
+[2026-10-21 02:02:23] [INFO] Remodeling step: leave-one-out.
+
+[2026-10-21 02:02:23] [INFO] Calculating leave-one-patient-out metrics for  ptn1 .
+
+[2026-10-21 02:02:23] [INFO] Calculating leave-one-patient-out metrics for  ptn2 .
+
+[2026-10-21 02:02:23] [INFO] Calculating leave-one-patient-out metrics for  ptn3 .
+
+[2026-10-21 02:02:23] [INFO] Calculating leave-one-patient-out metrics for  ptn4 .
+
+[2026-10-21 02:02:23] [INFO] Calculating leave-one-patient-out metrics for  ptn5 .
+
+[2026-10-21 02:02:23] [INFO] Calculating leave-one-patient-out metrics for  ptn6 .
+
+[2026-10-21 02:02:23] [INFO] Remodeling step: reml-runner.
+
+[2026-10-21 02:02:23] [INFO] Remodeling step: reml-analysis.
+
+[2026-10-21 02:02:23] [INFO] Gene null  all_6_pairs :  2  /  4  scheduled genes cached.
+
+[2026-10-21 02:02:24] [INFO] Gene null  all_6_pairs :  4  /  4  scheduled genes cached.
+
+[2026-10-21 02:02:24] [INFO] Gene null  excluding_ptn2_5_pairs :  2  /  4  scheduled genes cached.
+
+[2026-10-21 02:02:24] [INFO] Gene null  excluding_ptn2_5_pairs :  4  /  4  scheduled genes cached.
+
+[2026-10-21 02:02:24] [INFO] Remodeling step: resolution-refinement.
+
+[2026-10-21 02:02:24] [INFO] Remodeling step: truth-known-validation.
+
+[2026-10-21 02:02:24] [INFO] Remodeling step: authoritative-table.
+
+[2026-10-21 02:02:25] RNA analysis finished: audit_only. Run record: /tmp/smoke/results/runs/20261021T000208280999_42
+
+Synthetic smoke output: /tmp/smoke
+This run uses reduced simulations and does not certify study-result reproduction.
+
+{"type":"character","names":null,"values":["SMOKE FINISHED"]}
